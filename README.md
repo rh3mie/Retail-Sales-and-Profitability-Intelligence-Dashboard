@@ -1,6 +1,57 @@
-# Superstore-Sales-Analytics-Dashboard
+# Superstore Sales Analytics Dashboard
 
 *By Rhey Mar De Vera*
 
 ## Overview
-This project 
+This project was created to analyze retail sales data and offer business intelligence solutions through the use of **PostgreSQL** and **Power BI**. The objective was to design a structured data model and use it to build a multi-paged dashboard to evaluate real-world analytics. This includes insights such as:
+
+- Business Performance
+- Product Profitability
+- Customer Segmentation
+- Geographic Trends
+
+## Files
+
+- ```dashboard + images```: This folder contains the Power BI dashboard file, along with screenshots of its pages.
+- ```sql code```: This folder holds all the SQL code used in this project (schema, views, etc.)
+- ```Sample - Superstore.csv```: CSV file containing superstore sales data (Original data from [Kaggle](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)).
+
+## The Database
+
+<img width="980" height="628" alt="image" src="https://github.com/user-attachments/assets/34a40277-e996-48f1-966d-d2a788161986" />
+
+Using PostgreSQL, I structured the data into a star schema to optimize queries and for better dashboard use. In total, there are 6 tables, all centered around the facts table:
+- ```dim_date```: Contains all data with dates for product sales, orders, etc.
+- ```dim_product```: Holds all product information (name, sales, etc.).
+- ```dim_customer```: Stores all customer information (name, segment, etc.).
+- ```dim_geography```: Has cities, countries, states, and postal code data.
+- ```dim_ship_mode```: Stores information about an order's shipment mode.
+- ```fact_orders```: Contains all sales, profit, quantity, and discount data.
+
+By creating a structured schema in PostgreSQL, it allows for the data relationships to be understood more clearly, as each table is connected with primary and foreign keys. This also improves model clarity and query efficiency, especially across dimensions such as time, product, customer, and geography. As a result, the data model becomes more scalable, easier to maintain, and optimized. With this, it is ready to be loaded and used in Power BI.
+
+## Dashboard Structure
+
+Using the PostgreSQL database, I loaded it into Power BI and created a dashboard with three analytical pages.
+
+**1. General Overview Page**
+<img width="2045" height="1148" alt="image" src="https://github.com/user-attachments/assets/ae622ab3-a3bc-4acf-ab65-e6108609c2b6" />
+
+The goal of this page is to provide an overall assessment of the superstore's health and sales trends. Here we can see a KPI summary, monthly sales and margin trends, quarterly profit breakdowns, category contribution analysis, and state-level performance. We can also use the filters on the left view this data for different years/months, regions, and product categories.
+
+**2. Product Performance Page**
+<img width="2045" height="1149" alt="image" src="https://github.com/user-attachments/assets/6d4ec1f7-1bef-4dca-a395-22600721a273" />
+
+This page analyzes product-level sales, profitability, shipping selection, and more. It contains visualizations on sales and profit by product and subcategory, profit margin by category, orders by shipping mode, and a product performance table. This helps with pricing and product strategy decisions as it evaluates product performance at multiple levels.
+
+**3. Customer Insights Page**
+<img width="2047" height="1150" alt="image" src="https://github.com/user-attachments/assets/ebca5783-dbd7-4ebf-bf4a-66f775d9cdc0" />
+
+With this page, we can evaluate customer behavior based on segmentation, geography, and growth trends. It contains information on customer count per state, sales, and profit by customer segment, and profit distribution by state. This can be used to view which customer segments drive the most value, how different regions perform, and how customer count changes by time. This can be used for segmentation strategy and retention efforts.
+
+## Key Insights
+In this project, I used PostgreSQL and Power BI to explore and analyze retail sales performance, product profitability, and customer behavior. I used SQL queries with CTEs, subqueries, and window functions, as well as Power BI's DAX queries and visualizations to find these insights.
+
+- 
+
+
