@@ -3,7 +3,7 @@
 *By Rhey Mar De Vera*
 
 ## Overview
-This project was created to analyze retail sales data and offer business intelligence solutions through the use of **PostgreSQL** and **Power BI**. The objective was to design a structured data model and use it to build a multi-paged dashboard to evaluate real-world analytics. This includes insights such as:
+This project was created to analyze retail sales data and provide business intelligence solutions using **PostgreSQL** and **Power BI**. The objective was to design a structured data model and use it to build a multi-paged dashboard to evaluate real-world analytics. This includes insights such as:
 
 - Business Performance
 - Product Profitability
@@ -47,11 +47,20 @@ This page analyzes product-level sales, profitability, shipping selection, and m
 **3. Customer Insights Page**
 <img width="2047" height="1150" alt="image" src="https://github.com/user-attachments/assets/ebca5783-dbd7-4ebf-bf4a-66f775d9cdc0" />
 
-With this page, we can evaluate customer behavior based on segmentation, geography, and growth trends. It contains information on customer count per state, sales, and profit by customer segment, and profit distribution by state. This can be used to view which customer segments drive the most value, how different regions perform, and how customer count changes by time. This can be used for segmentation strategy and retention efforts.
+With this page, we can evaluate customer behavior based on segmentation, geography, and growth trends. It contains information on customer count per state, sales, and profit by customer segment, and profit distribution by state. This can be used to view which customer segments drive the most value, how different regions perform, and how customer counts change over time. This can be used for segmentation strategy and retention efforts.
 
 ## Key Insights
 In this project, I used PostgreSQL and Power BI to explore and analyze retail sales performance, product profitability, and customer behavior. I used SQL queries with CTEs, subqueries, and window functions, as well as Power BI's DAX queries and visualizations to find these insights.
 
-- 
+- Revenue and Profit: From KPI tracking and visualizations, the superstore shows strong year-to-year growth in revenue and profit. Profit margins also remained stable, showing a strong pricing structure.
+- Product Performance: Despite some products having high sales, it doesn't always translate to high profit. For example, there are high-cost furniture products that produce a loss in revenue. This gives opportunities to optimize pricing and product inventory based on performance.
+- Customer Insights: Across regions, performance varies significantly by state. We can also see sales and profit based on customer segmentation. These findings would enable deeper support for targeted customer retention and marketing.
+- Shipping Efficiency: Standard shipping was chosen more often over first and second class shipping, but had longer delivery periods. This insight could be used for marketing to encourage customers to buy more products, in return for better shipping.
+- Discounts Effect on Profit: Lower discounts (0-20%) kept a healthy profit margin; discounts above that group (20-50%+) would lower it, despite them seeming to contribute a lot to sales volume. Focusing on balancing these discounts can keep these products having high contributions to sales volume, while keeping the profit margin positive.
 
+## How to use this Project
+1. Import the dataset into PostgreSQL
+2. Run the scripts in ```sql code``` to create the schema and dimensions
+3. Open the Power BI file (```superstore_sales_dashboard.pbix```) and connect the database
+4. Refresh the data model
 
