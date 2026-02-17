@@ -52,11 +52,11 @@ With this page, we can evaluate customer behavior based on segmentation, geograp
 ## Key Insights
 In this project, I used PostgreSQL and Power BI to explore and analyze retail sales performance, product profitability, and customer behavior. I used SQL queries with CTEs, subqueries, and window functions, as well as Power BI's DAX queries and visualizations to find these insights.
 
-- Revenue and Profit: From KPI tracking and visualizations, the superstore shows strong year-to-year growth in revenue and profit. Profit margins also remained stable, showing a strong pricing structure.
-- Product Performance: Despite some products having high sales, it doesn't always translate to high profit. For example, there are high-cost furniture products that produce a loss in revenue. This gives opportunities to optimize pricing and product inventory based on performance.
-- Customer Insights: Across regions, performance varies significantly by state. We can also see sales and profit based on customer segmentation. These findings would enable deeper support for targeted customer retention and marketing.
-- Shipping Efficiency: Standard shipping was chosen more often over first and second class shipping, but had longer delivery periods. This insight could be used for marketing to encourage customers to buy more products, in return for better shipping.
-- Discounts Effect on Profit: Lower discounts (0-20%) kept a healthy profit margin; discounts above that group (20-50%+) would lower it, despite them seeming to contribute a lot to sales volume. Focusing on balancing these discounts can keep these products having high contributions to sales volume, while keeping the profit margin positive.
+- **Revenue and Profit**: From KPI tracking and visualizations, the superstore shows strong year-to-year growth in revenue and profit. Profit margins also remained stable, showing a strong pricing structure.
+- **Product Performance**: Despite some products having high sales, it doesn't always translate to high profit. For example, there are high-cost furniture products that produce a loss in revenue. This gives opportunities to optimize pricing and product inventory based on performance.
+- **Customer Insights**: Across regions, performance varies significantly by state. We can also see sales and profit based on customer segmentation. These findings would enable deeper support for targeted customer retention and marketing.
+- **Shipping Efficiency**: Standard shipping was chosen more often over first and second class shipping, but had longer delivery periods. This insight could be used for marketing to encourage customers to buy more products, in return for better shipping.
+- **Discounts Effect on Profit**: Lower discounts (0-20%) kept a healthy profit margin; discounts above that group (20-50%+) would lower it, despite them seeming to contribute a lot to sales volume. Focusing on balancing these discounts can keep these products having high contributions to sales volume, while keeping the profit margin positive.
 
 ## How to use this Project
 1. Import the dataset into PostgreSQL
