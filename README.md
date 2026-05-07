@@ -58,6 +58,22 @@ In this project, I used PostgreSQL and Power BI to explore and analyze retail sa
 - **Shipping Efficiency**: Standard shipping was chosen more often over first and second class shipping, but had longer delivery periods. This insight could be used for marketing to encourage customers to buy more products, in return for better shipping.
 - **Discounts Effect on Profit**: Lower discounts (0-20%) kept a healthy profit margin; discounts above that group (20-50%+) would lower it, despite them seeming to contribute a lot to sales volume. Focusing on balancing these discounts can keep these products having high contributions to sales volume, while keeping the profit margin positive.
 
+## Recommendations
+
+Based on the sales, profitability, customer, and shipping analysis, several actions could improve business performance:
+
+- **Review underperforming high-sales products**: Especially items that generate strong revenue but weak or negative profit. These products should be evaluated for pricing changes, cost reduction opportunities, or inventory adjustments.
+
+- **Limit aggressive discounting above 20%**: Higher discount ranges appear to reduce profit margin despite contributing to sales volume. Discount strategies should prioritize profitability instead of revenue growth alone.
+
+- **Use customer segmentation to target high-value groups**: Focusing marketing and retention efforts on segments and regions that consistently drive stronger sales and profit.
+
+- **Investigate low-profit states or regions**: Regional pricing, product mix, or marketing strategies could be adjusted based on state-level profitability trends.
+
+- **Improve shipping strategy around Standard Class**: The business could test incentives that encourage larger orders in exchange for standard shipping or promote faster shipping for high-value customers.
+
+- **Monitor category and subcategory profit margins regularly**: Especially in categories where sales volume masks weaker profitability. This would help prioritize which product lines to promote, adjust, or reduce.
+
 ## How to use this Project
 1. Import the dataset into PostgreSQL
 2. Run the scripts in ```sql code``` to create the schema and dimensions
