@@ -1,4 +1,4 @@
-# Retail Sales Intelligence Dashboard
+# Sales & Profitability Intelligence Dashboard
 
 *By Rhey Mar De Vera*
 
